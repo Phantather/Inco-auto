@@ -1,0 +1,31 @@
+@import "../fonts/Mueso/style.css";
+@import "mixins";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1185px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+
+
+
+
+$museo-700: 'Museo Sans Cyrl 700',sans-serif;
+$museo-300: 'Museo Sans Cyrl 300', sans-serif;
+
+
+@import "button";
+@import "overlay";
+@import "header";
+@import "begin";
+@import "autos";

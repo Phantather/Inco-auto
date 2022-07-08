@@ -1,0 +1,64 @@
+.header {
+  &__top {
+    padding: 30px 0;
+    background: #172027;
+    &-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    &-right {
+      display: flex;
+      align-items: center;
+      column-gap: 28px;
+    }
+    &-social {
+      display: flex;
+      column-gap: 15px;
+    }
+    &-call {
+      display: flex;
+      column-gap: 12px;
+      align-items: center;
+    }
+    &-tel {
+      font-family: $museo-700;
+      font-size: 15px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+    &-icon {
+      cursor: pointer;
+      svg {
+        path {
+          transition: .3s;
+          &:hover{
+            transition: .3s;
+            fill: #18DC6D;
+          }
+        }
+      }
+    }
+  }
+  &__bottom {
+    padding: 14px 0;
+    background: #F2F2F3;
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  &__link {
+    font-family: $museo-300;
+    font-size: 15px;
+    line-height: 18px;
+    color: #0F0F10;
+    transition: .3s;
+    &:hover {
+      font-family: $museo-700;
+      transition: .3s;
+      color: #E31E24;
+    }
+  }
+}

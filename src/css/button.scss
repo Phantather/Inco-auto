@@ -1,0 +1,30 @@
+.btn {
+  font-family: $museo-700;
+  font-size: 15px;
+  line-height: 18px;
+  color: #FFFFFF;
+  padding: 17px 31px;
+  cursor: pointer;
+  border-radius: 43px;
+  &__green {
+    background: linear-gradient(360deg, #077A34 0%, #19E270 100%);
+    box-shadow: 0 9px 48px rgba(24, 220, 109, 0.15);
+    border: 1px solid #18DE6E;
+    transition: .5s;
+    &:hover {
+      transition: .5s;
+      background: #FFFFFF;
+      color: #18DC6D;
+    }
+  }
+  &__red {
+    background: linear-gradient(360deg, #A8180F 0%, #DD463D 100%);
+    box-shadow: 0 9px 48px rgba(211, 61, 52, 0.24);
+    border: 1px solid #E31E24;
+    transition: .5s;
+    &:hover {
+      background: #FFFFFF;
+      color: #E31E24;
+    }
+  }
+}

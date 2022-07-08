@@ -1,0 +1,64 @@
+.begin {
+  padding: 180px 0 81px;
+  background: url("../images/bg.png") center / cover no-repeat;
+  position: relative;
+  &::before {
+    content: '';
+    background: linear-gradient(81.5deg, rgba(0, 0, 0, 0.584) 40.95%, rgba(0, 0, 0, 0) 99.79%);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    column-gap: 88px;
+    position: relative;
+    z-index: 3;
+  }
+  &__content {
+    width: 50%;
+  }
+  &__img {
+    width: 100%;
+  }
+  &__title {
+    font-family: $museo-700;
+    font-size: 44px;
+    line-height: 96.5%;
+    color: #FFFFFF;
+  }
+  &__desc {
+    font-family: $museo-300;
+    font-size: 22px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin: 20px 0 26px;
+  }
+  &__btns {
+    display: flex;
+    column-gap: 46px;
+  }
+  &__btn {
+    padding: 17px 85px;
+  }
+  &__bottom {
+    display: flex;
+    column-gap: 120px;
+    position: relative;
+    z-index: 2;
+    &-info {
+      display: flex;
+      align-items: center;
+      column-gap: 20px;
+    }
+    &-text {
+      font-family: $museo-300;
+      font-size: 15px;
+      line-height: 18px;
+      color: #FFFFFF;
+    }
+  }
+}

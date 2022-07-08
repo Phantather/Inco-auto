@@ -1,0 +1,137 @@
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background: #00000080;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: none;
+  padding: 0 50px;
+}
+
+.popup {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: #FFFFFF;
+  &__close {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  &__call {
+    width: 952px;
+    display: flex;
+  }
+  &__img {
+    width: 50%;
+  }
+  &__form {
+    width: 50%;
+    padding: 80px;
+    &-title {
+      font-family: $museo-700;
+      font-size: 25px;
+      line-height: 96.5%;
+      color: #0F0F10;
+      white-space: nowrap;
+      text-align: center;
+    }
+    &-desc {
+      font-family: $museo-300;
+      font-size: 13px;
+      line-height: 15px;
+      color: #0F0F10;
+      margin: 5px 0 40px;
+      text-align: center;
+    }
+    &-input {
+
+      &:invalid {
+        border: 1px solid #E31E24;
+        color: #E31E24;
+      }
+      background: #FFFFFF;
+      box-shadow: 0 5px 48px rgba(49, 47, 47, 0.1);
+      border-radius: 43px;
+      border: 1px solid #FFFFFF;
+      width: 100%;
+      height: 52px;
+      padding-left: 32px;
+      outline: none;
+      margin-bottom: 15px;
+
+      &::placeholder {
+        font-family: $museo-300;
+        font-size: 15px;
+        line-height: 18px;
+        color: #E31E24;
+      }
+    }
+    &-label {
+      display: flex;
+      align-items: center;
+      column-gap: 7px;
+      margin-bottom: 15px;
+      input:not(:checked) + .popup__form-label-text span {
+        color: #E31E24;
+      }
+      &-text {
+        font-family: $museo-300;
+        font-size: 13px;
+        line-height: 15px;
+        color: #0F0F10;
+      }
+    }
+    &-date {
+      width: 50%;
+      margin-bottom: 15px;
+      box-shadow: 0 5px 48px rgba(49, 47, 47, 0.1);
+      border-radius: 43px;
+      border: 1px solid #FFFFFF;
+      padding: 0 15px;
+      outline: none;
+    }
+  }
+  &__test {
+    width: 896px;
+    .popup__form-title {
+      margin-bottom: 45px;
+    }
+    .popup__form-label-date {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      span {
+        font-family: $museo-300;
+        font-size: 15px;
+        line-height: 18px;
+        color: #0F0F10;
+      }
+    }
+  }
+  &__rent {
+    width: 896px;
+    .popup__form-title {
+      margin-bottom: 45px;
+    }
+    .popup__form-label-date {
+      display: flex;
+      flex-direction: column;
+      row-gap: 5px;
+      span {
+        font-family: $museo-300;
+        font-size: 15px;
+        line-height: 18px;
+        color: #0F0F10;
+      }
+    }
+  }
+}
+
+
+

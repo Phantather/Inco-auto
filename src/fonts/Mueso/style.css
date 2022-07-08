@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'Museo Sans Rounded';
+    src: local('Museo Sans Rounded 300'), local('Museo-Sans-Rounded-300'),
+    url('MuseoSansRounded-300.woff2') format('woff2'),
+    url('MuseoSansRounded-300.woff') format('woff'),
+    url('MuseoSansRounded-300.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Museo Sans Rounded';
+    src: local('Museo Sans Rounded 700'), local('Museo-Sans-Rounded-700'),
+    url('MuseoSansRounded-700.woff2') format('woff2'),
+    url('MuseoSansRounded-700.woff') format('woff'),
+    url('MuseoSansRounded-700.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
