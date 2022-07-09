@@ -505,3 +505,45 @@
   display: flex;
   margin: 60px auto 0;
 }
+
+.advantage {
+  padding: 96px 0;
+  background: #EEEEEE;
+}
+.advantage__title {
+  font-family: "Museo Sans Cyrl 700", sans-serif;
+  font-size: 35px;
+  line-height: 96.5%;
+  color: #0F0F10;
+  margin-bottom: 68px;
+}
+.advantage__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+}
+.advantage__content {
+  width: calc(33.33333% - 33.33333px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-column-gap: 20px;
+     -moz-column-gap: 20px;
+          column-gap: 20px;
+}
+.advantage__content-title {
+  font-family: "Museo Sans Cyrl 700", sans-serif;
+  font-size: 18px;
+  line-height: 111%;
+  color: #0F0F10;
+  margin-bottom: 10px;
+}
+.advantage__content-desc {
+  font-family: "Museo Sans Cyrl 300", sans-serif;
+  font-size: 15px;
+  line-height: 18px;
+  color: #0F0F10;
+}

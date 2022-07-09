@@ -1,0 +1,26 @@
+.advantage {
+  padding: 96px 0;
+  background: #EEEEEE;
+
+  &__title {
+    @include font($museo-700, 35px, 96.5%, #0F0F10);
+    margin-bottom: 68px;
+  }
+  &__row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+  }
+  &__content {
+    width: calc(33.33333% - 33.33333px);
+    display: flex;
+    column-gap: 20px;
+    &-title {
+      @include font($museo-700, 18px, 111%, #0F0F10);
+      margin-bottom: 10px;
+    }
+    &-desc {
+      @include font($museo-300, 15px, 18px, #0F0F10);
+    }
+  }
+}
